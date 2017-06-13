@@ -1,7 +1,9 @@
 % saves the coordinates and time stamps of the frames of a pdb file into matlab arrays
 % output files: traj(frames, coordinates, atoms)
 function [traj, time] = PdbTrajReadPos(trajFileName, nFrm, nAtm)
+
 fid = fopen(trajFileName,'r');
+
 traj = zeros(nFrm,3,nAtm);
 
 time = zeros(nFrm,1);
@@ -42,4 +44,5 @@ time = zeros(nFrm,1);
     end
    
 fclose(fid);
+
 clear fid a f firstWrd

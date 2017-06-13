@@ -8,8 +8,11 @@
 % 4. number of atoms(nAtm)
 
 function [atmGrpRes, atmNam, resNam, nAtm] = PdbFirstFrame(trajFileName) 
+
 fid = fopen(trajFileName,'r');
+
 firstWrd = fscanf(fid, '%s',1);
+
 i = 0;
 
 while ~strcmp(firstWrd,'ENDMDL')
@@ -37,8 +40,11 @@ while ~strcmp(firstWrd,'ENDMDL')
     end
     
 end
+
 fclose(fid);
+
 atmNam = atmNam';
 resNam = resNam';
 nAtm = size(atmGrpRes,1);
+
 clear fid firstWrd i ans
