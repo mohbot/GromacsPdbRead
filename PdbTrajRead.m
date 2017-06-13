@@ -7,7 +7,7 @@ function [atmGrpRes, atmNam, resNam, nAtm, traj, time] = PdbTrajRead(trajFileNam
 % PdbTrajReadPos_reads and saves the cooridnates of the atoms into matlab arrays 
   
 % outputs: 
-% 1. 1. 1st columnd: atom types(ATOM=1 or HETATM=2), 2nd column: residue number
+% 1. 1st columnd: atom types(ATOM=1 or HETATM=2), 2nd column: residue number
 %    for each atom in a array(atmGrpRes)
 % 2. atom names in a cell(atmNam)
 % 3. residue names in a cell(resNam)
