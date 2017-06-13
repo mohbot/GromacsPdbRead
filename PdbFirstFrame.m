@@ -1,13 +1,14 @@
+function [atmGrpRes, atmNam, resNam, nAtm] = PdbFirstFrame(trajFileName) 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Reads the first frame of the trajectory and saves the topological information
 % input argument trajectory of heavy atoms without chain ID
 % outputs: 
-% 1. atom types(ATOM or HETATM) and residue number in a array(atmGrpRes)
+% 1. 1. 1st columnd: atom types(ATOM=1 or HETATM=2), 2nd column: residue number
+%    for each atom in a array(atmGrpRes)
 % 2. atom names in a cell(atmNam)
 % 3. residue names in a cell(resNam)
 % 4. number of atoms(nAtm)
 
-function [atmGrpRes, atmNam, resNam, nAtm] = PdbFirstFrame(trajFileName) 
 
 fid = fopen(trajFileName,'r');
 

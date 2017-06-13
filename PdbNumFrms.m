@@ -1,4 +1,6 @@
-% finds the number of frames of a pdb file.
+function nFrm = PdbNumFrms(trajFileName)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% counts the number of frames of a pdb file.
 function nFrm = PdbNumFrms(trajFileName)
 
 nFrm = 0;
