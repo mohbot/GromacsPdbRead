@@ -1,2 +1,3 @@
 # GromacsPdbRead
-These matlab files read Gromacs pdb files and save them into matlab arrays
+PdbTrajRead reads and saves the Gromacs(Molecular Dynamics Simulation code) .pdb output files
+with just heavy atoms into matlab arrays.
