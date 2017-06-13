@@ -8,8 +8,9 @@
 % 2. atom names in a cell(atmNam)
 % 3. residue names in a cell(resNam)
 % 4. number of atoms(nAtm) 
+% 5. frames' timestamp(time)
 
-function [atmGrpRes, atmNam, resNam, nAtm, traj] = PdbTrajRead(trajFileName,nFrm)
+function [atmGrpRes, atmNam, resNam, nAtm, traj, time] = PdbTrajRead(trajFileName,nFrm)
 
 [atmGrpRes, atmNam, resNam, nAtm] = PdbFirstFrame(trajFileName); 
 
@@ -17,5 +18,5 @@ function [atmGrpRes, atmNam, resNam, nAtm, traj] = PdbTrajRead(trajFileName,nFrm
  if nargin < 2
      nFrm = PdbNumFrms(trajFileName);
  else
- traj = PdbTrajReadPos(trajFileName, nFrm, nAtm);
+ [traj, time] = PdbTrajReadPos(trajFileName, nFrm, nAtm);
  end
