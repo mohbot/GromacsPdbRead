@@ -1,4 +1,4 @@
-% save the trajectory and time stamps of the frames of a pdb file into matlab arrays
+% saves the coordinates and time stamps of the frames of a pdb file into matlab arrays
 % output files: traj(frames, coordinates, atoms)
 function [traj, time] = PdbTrajReadPos(trajFileName, nFrm, nAtm)
 fid = fopen(trajFileName,'r');

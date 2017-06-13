@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Reading the first frame of the trajectory
+% Reads the first frame of the trajectory and saves the topological information
 % input argument trajectory of heavy atoms without chain ID
 % outputs: 
 % 1. atom types(ATOM or HETATM) and residue number in a array(atmGrpRes)

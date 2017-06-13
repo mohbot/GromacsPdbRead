@@ -1,7 +1,8 @@
+% PdbTrajRead reads and saves the Gromacs pdb file into matlab arrays
 % Required functions: 
-% PdbFirstFrame
-% PdbNumFrms
-% PdbTrajReadPos
+% PdbFirstFrame_reads the first frame of the trajectory
+% PdbNumFrms_counts the number of frames of the trajectory if it's not known
+% PdbTrajReadPos_reads and saves the cooridnates of the atoms into matlab arrays 
   
 % outputs: 
 % 1. atom types(ATOM=1 or HETATM=2) and residue number in a array(atmGrpRes)
